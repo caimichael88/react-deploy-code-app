@@ -23,7 +23,7 @@ app.get('*', function(req, res) {
 console.log('App running');
 
 mongoose
-  .connect(MONGOD_URI,
+  .connect(MONGODB_URI,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
