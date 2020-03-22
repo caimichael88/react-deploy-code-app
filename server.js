@@ -6,7 +6,7 @@ const userRouter = require('./api/routes/users/userRoutes');
 const notesRouter = require('./api/routes/notes/notesRoutes');
 
 const PORT = process.env.PORT || 8080;
-const MONGOD_URI = process.env.MONGOD_URI || 'mongodb://localhost:27017/note-app';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/note-app';
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
