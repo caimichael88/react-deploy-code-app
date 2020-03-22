@@ -20,6 +20,7 @@ app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+console.log('App running');
 
 mongoose
   .connect(MONGOD_URI,
